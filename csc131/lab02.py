@@ -4,12 +4,12 @@ def fact_recursive(n: int) -> int:
     :param n: The value whose factorial we seek
     :return: n! is returned; -1 is returned if n < 0.
     """
-    if (n < 0):
+    if(n<0):
         return -1
+    if (n == 0):
+        return 1
     else:
-        return fact_recursive(n-1)*n
-
-
+        return n*fact_recursive(n-1)
 
     # TODO: Implement me correctly using recursion
     return None
@@ -24,6 +24,8 @@ def fact_iterative(n: int) -> int:
     temp = 1
     if (n < 0):
         return -1
+    if(n==0):
+        return 1
     else:
         for index in range(n):
             temp *= index
