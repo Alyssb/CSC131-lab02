@@ -27,8 +27,8 @@ def fact_iterative(n: int) -> int:
     if(n==0):
         return 1
     else:
-        for index in range(n):
-            temp *= index
+        for index in range(1,n+1):
+            temp*=index
 
     # TODO: Implemented me correctly using iteration.
     return temp
