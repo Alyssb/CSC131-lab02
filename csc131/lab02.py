@@ -6,7 +6,7 @@ def fact_recursive(n: int) -> int:
     """
     if(n<0):
         return -1
-    if (n == 0):
+    elif (n == 0):
         return 1
     else:
         return n*fact_recursive(n-1)
@@ -24,7 +24,7 @@ def fact_iterative(n: int) -> int:
     temp = 1
     if (n < 0):
         return -1
-    if(n==0):
+    elif(n==0):
         return 1
     else:
         for index in range(1,n+1):
@@ -56,7 +56,7 @@ def fib(n: int) -> int:
     """
     if(n<1):
         return -1
-    elif(n==1):
+    elif(n==1 or n==2):
         return 1
     else:
         return fib(n-1)+fib(n-2)
